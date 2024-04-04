@@ -25,12 +25,12 @@ void sync() {
   Blynk.syncVirtual(V4); // Synchronize virtual pin V4
 }
 
-BLYNK_WRITE(V2) {
+BLYNK_WRITE(V2) {    //laser on/off function from blynk
   int pinValue = param.asInt(); // Get value as integer
   digitalWrite(Laser, pinValue); // Set the laser to the pin value
 }
 
-BLYNK_WRITE(V4) {
+BLYNK_WRITE(V4) {    //takephoto function from blynk
   int pinValue = param.asInt(); // Get value as integer
   if(pinValue == 1) {
     takePhoto();
