@@ -1,6 +1,6 @@
 #define BLYNK_TEMPLATE_ID "TMPL3zmPQ_v0P"
 #define BLYNK_TEMPLATE_NAME "Quickstart Template"
-#define BLYNK_AUTH_TOKEN "M2Ze1VOP1shAptsIflLyKfNQcXa1Y-tj"
+#define BLYNK_AUTH_TOKEN "......."  //Authentication Token of Blynk
 #include "esp_camera.h"
 #include <WiFi.h>
 #include <WiFiClient.h>
@@ -12,9 +12,9 @@
 #define LED 4
 #define Laser 12
 
-const char* ssid = "TD";
-const char* password = "12345678";
-char auth[] = "M2Ze1VOP1shAptsIflLyKfNQcXa1Y-tj";
+const char* ssid = "....";  //you's ssid
+const char* password = ".....";  //ssid credential 
+char auth[] = "......";  //Authentication Token of Blynk
 
 String local_IP;
 
